@@ -5,7 +5,11 @@ public class StrawberryFields {
     //Al final está la letra completa
     
     public static void main(String[] args) {
-
+        playChorus();
+        for (int i = 1; i <= 3; i++) {
+            playVersus(i);
+            playChorus();
+        }
     }
 
     /**
@@ -16,7 +20,29 @@ public class StrawberryFields {
      * Inside the function:
      * 1. print versus according the position number
      */
-    
+    public static void playVersus(int number) {
+        switch (number) {
+            case 1:
+                System.out.println("Living is easy with eyes closed");
+                System.out.println("Misunderstanding all you see");
+                System.out.println("It's getting hard to be someone, but it all works out");
+                System.out.println("It doesn't matter much to me\n");
+                break;
+            case 2:
+                System.out.println("No one I think is in my tree");
+                System.out.println("I mean, it must be high or low");
+                System.out.println("That is, you can't, you know, tune in, but it's alright");
+                System.out.println("That is, I think it's not too bad\n");
+                break;
+            case 3:
+                System.out.println("Always, no sometimes, think it's me");
+                System.out.println("But you know, I know when it's a dream");
+                System.out.println("I think I know, I mean a yes");
+                System.out.println("But it's all wrong");
+                System.out.println("That is, I think I disagree\n");
+                break;
+        }
+    }
 
     /**
      * Function name: playChorus
@@ -24,8 +50,13 @@ public class StrawberryFields {
      * Inside the function:
      * 1. print chorus 
      */
-    
-
+    public static void playChorus() {
+        System.out.println("Let me take you down");
+        System.out.println("'Cause I'm going to strawberry fields");
+        System.out.println("Nothing is real");
+        System.out.println("And nothing to get hung about");
+        System.out.println("Strawberry fields forever\n");
+    }
 }
 
 
